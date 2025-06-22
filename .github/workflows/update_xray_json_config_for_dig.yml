@@ -1,7 +1,7 @@
 name: update_xray_json_config_for_dig
 on:
   workflow_dispatch:
-  push:
+  push: 
   schedule:
     - cron: '0 20 * * *'
 jobs:
