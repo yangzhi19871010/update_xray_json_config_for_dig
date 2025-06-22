@@ -18,4 +18,9 @@ jobs:
           mkdir -p ~/.ssh
           echo "${SSH_PRIVATE_KEY}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
+          rm -rf xray_json_config_for_dig
           git clone git@github.com:shoguncao/xray_json_config_for_dig.git
+          pushd xray_json_config_for_dig
+          ./delete_unavailable_json_cfg.sh
+          ./add_link_2_json_cfg.sh
+          popd xray_json_config_for_dig
