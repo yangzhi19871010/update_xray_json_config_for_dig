@@ -11,6 +11,6 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: xxoo
+      - name: update_xray_json_config_for_dig
         run: |
-          git clone https://github.com/shoguncao/xray_json_config_for_dig.git
+          git clone git@github.com:yangzhi19871010/xray_json_config_for_dig.git
