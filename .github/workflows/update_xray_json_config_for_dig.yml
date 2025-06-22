@@ -1,7 +1,7 @@
 name: update_xray_json_config_for_dig
 on:
   workflow_dispatch:
-  push:  
+  push:
   schedule:
     - cron: '0 20 * * *'
 jobs:
@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: xxoo
         run: |
-          git clone git@github.com:shoguncao/xray_json_config_for_dig.git
+          git clone https://github.com/shoguncao/xray_json_config_for_dig.git
