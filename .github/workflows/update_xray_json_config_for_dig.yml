@@ -25,4 +25,3 @@ jobs:
           ./delete_unavailable_json_cfg.sh
           ./add_link_2_json_cfg.sh
           popd
- // 21871
