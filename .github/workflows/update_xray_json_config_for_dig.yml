@@ -13,6 +13,7 @@ jobs:
       - name: update_xray_json_config_for_dig
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SELF_SSH_KEY: ${{ secrets.SELF_SSH_KEY }}
         run: |
           mkdir -p ~/.ssh
           echo "${SSH_PRIVATE_KEY}" > ~/.ssh/id_rsa
